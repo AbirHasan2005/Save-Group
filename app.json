@@ -1,0 +1,49 @@
+{
+  "name": "Telegram Group Saver",
+  "description": "A Telegram to make your leech/mirror group copyright free",
+  "keywords": [
+    "telegram"
+  ],
+  "repository": "https://github.com/AbirHasan2005/Save-Group",
+  "success_url": "https://github.com/AbirHasan2005/Save-Group",
+  "website": "https://github.com/AbirHasan2005/Save-Group",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org or @TeleORG_Bot",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org or @TeleORG_Bot",
+      "value": ""
+    },
+    "STRING_SESSION ": {
+      "description": "Pyrogram user session string, get it from @StringSessionGen_Bot",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "your channel username that you want to forcesub",
+      "value": ""
+    },
+    "MONGODB_URI ": {
+      "description": "Mongo databse url get it from https://www.mongodb.com",
+      "value": ""
+    },
+    "BOT_TOKEN ": {
+      "description": "telegram bot token, get it from @botfather ",
+      "value": ""
+    },
+    "FILES_STORE_BOT_UNAME": {
+      "description": "Your file store bot username, keep it default",
+      "value": "SuperFilesStoreBot"
+    },
+    "BLOCKED_EXTENSIONS": {
+      "description": "blocked files extension that will not get deleted.",
+      "value": "srt txt jpg jpeg png torrent html aio pdf"
+    },
+    "DATABASE_ID": {
+      "description": "Your private channel id for databse.",
+      "value": "",
+    }
+  },
+  "stack": "heroku-20"
+}
