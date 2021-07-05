@@ -13,4 +13,4 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     FILES_STORE_BOT_UNAME = os.environ.get("FILES_STORE_BOT_UNAME", "SuperFilesStoreBot")
     DEFAULT_BLOCKED_EXTENSIONS = "srt txt jpg jpeg png torrent html aio pdf"
-    BLOCKED_EXTENSIONS = list(set(int(x) for x in os.environ.get("BLOCKED_EXTENSIONS", DEFAULT_BLOCKED_EXTENSIONS).split()))
+    BLOCKED_EXTENSIONS = list(set(x for x in os.environ.get("BLOCKED_EXTENSIONS", DEFAULT_BLOCKED_EXTENSIONS).split()))
