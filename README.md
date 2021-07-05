@@ -2,10 +2,11 @@
 I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo0YmQ0) group. Check in Group to understand how this works. I am feeling Lazy to Explain.
 
 ## Deploy to Heroku
+Press Below Button to Deploy as Lazy Deploy:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbirHasan2005/Save-Group)
 
-Using heroky cli...
+Using Heroku CLI
 ```shell
 git clone https://github.com/AbirHasan2005/Save-Group
 cd Save-Group
