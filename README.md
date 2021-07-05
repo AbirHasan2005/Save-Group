@@ -4,8 +4,8 @@ I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo
 ## Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbirHasan2005/Save-Group)
-As you know I am lazy, you have to deploy to Heroku via CLI for now.
 
+Using heroky cli...
 ```shell
 git clone https://github.com/AbirHasan2005/Save-Group
 cd Save-Group
