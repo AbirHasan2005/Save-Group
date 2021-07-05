@@ -2,6 +2,8 @@
 I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo0YmQ0) group. Check in Group to understand how this works. I am feeling Lazy to Explain.
 
 ## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbirHasan2005/Save-Group)
 As you know I am lazy, you have to deploy to Heroku via CLI for now.
 
 ```shell
