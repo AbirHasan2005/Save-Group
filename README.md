@@ -1,5 +1,5 @@
 # Save-Group
-This I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo0YmQ0) group. Check in Group to understand how this works. I am feeling Lazy to Explain.
+I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo0YmQ0) group. Check in Group to understand how this works. I am feeling Lazy to Explain.
 
 ## Deploy to Heroku
 As you know I am lazy, you have to deploy to Heroku via CLI for now.
