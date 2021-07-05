@@ -6,7 +6,7 @@ This is based on [PyroFilesStoreBot](https://github.com/AbirHasan2005/PyroFilesS
 ## Deploy to Heroku
 Press Below Button to Deploy as Lazy Deploy:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbirHasan2005/Save-Group)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Using Heroku CLI
 ```shell
