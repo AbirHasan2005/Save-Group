@@ -1,6 +1,4 @@
 # (c) @AbirHasan2005
-# This is Based on https://github.com/AbirHasan2005/PyroFilesStoreBot
-# To make this work this you have to Deploy that Bot.
 
 import asyncio
 from pyrogram import Client, filters, idle
@@ -20,7 +18,7 @@ User = Client(
     api_hash=Config.API_HASH
 )
 Bot = Client(
-    session_name="Group-files-store-bot",
+    session_name="Abir-Save-Group",
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
     bot_token=Config.BOT_TOKEN
@@ -62,14 +60,14 @@ async def files_handler(bot: Client, cmd: Message):
                "But,\n" \
                "File Stored in Database!\n" \
                f"**File Name:** `{media.file_name}`\n\n" \
-               f"[👉 Get File Now 👈](https://t.me/{Config.FILES_STORE_BOT_UNAME}?start=AbirHasan2005_{str(forward.message_id)})"
+               f"[👉 Get File Now 👈](https://t.me/{(await Bot.get_me()).username}?start=AbirHasan2005_{str(forward.message_id)})"
     else:
         text = f"{cmd.from_user.mention} Unkil,\n" \
                "This File will be deleted in 10 minutes.\n\n" \
                "But,\n" \
                "Your File stored in Database!\n\n" \
                f"**File Name:** `{media.file_name}`\n\n" \
-               f"[👉 Get Your File Now 👈](https://t.me/{Config.FILES_STORE_BOT_UNAME}?start=AbirHasan2005_{str(forward.message_id)})"
+               f"[👉 Get Your File Now 👈](https://t.me/{(await Bot.get_me()).username}?start=AbirHasan2005_{str(forward.message_id)})"
     await sendMessage(
         bot=bot,
         message_id=cmd.message_id,
@@ -119,6 +117,19 @@ async def Fsub_handler(bot: Client, event: Message):
             await db.delete_user(event.from_user.id)
 
 
+@Bot.on_message(filters.private & filters.command("start") & ~filters.edited)
+async def start_handler(bot: Client, event: Message):
+    __data = event.text.split("_")[-1]
+    if __data == "/start":
+        await sendMessage(bot, "Go Away Unkil", event.message_id, event.chat.id)
+    else:
+        file_id = int(__data)
+        try:
+            await bot.forward_messages(chat_id=event.chat.id, from_chat_id=Config.DB_CHANNEL_ID, message_ids=file_id)
+        except:
+            await sendMessage(bot, "Unable to Get Message!\n\nReport at @DevsZone !!", event.message_id, event.chat.id)
+
+
 @Bot.on_chat_member_updated()
 async def handle_Fsub_Join(bot: Client, event: Message):
     """
@@ -148,14 +159,18 @@ async def handle_Fsub_Join(bot: Client, event: Message):
             except Exception as e:
                 print(f"Skipping FSub ...\nError: {e}")
 
-# Start All Clients
+# Start User Client
 User.start()
 print("Userbot Started!")
+# Start Bot Client
 Bot.start()
 print("Bot Started!")
+# Loop Clients till Disconnects
 idle()
+# Stop User Client
 User.stop()
 print("\n")
 print("Userbot Stopped!")
+# Stop Bot Client
 Bot.stop()
 print("Bot Stopped!")

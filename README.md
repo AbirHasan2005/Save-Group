@@ -1,9 +1,14 @@
 # Save-Group
-I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo0YmQ0) group. Check in Group to understand how this works. I am feeling Lazy to Explain.
+I specially made this for my [Discovery Cloud](https://t.me/joinchat/O9WIjhCGHLo0YmQ0) group. Check in Group to understand how this works.
+
+This will just save your group files to a Channel & will provide a link to retrieve your file.
 
 ## Deploy to Heroku
-As you know I am lazy, you have to deploy to Heroku via CLI for now.
+Press Below Button to Deploy as Lazy Deploy:
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+Using Heroku CLI
 ```shell
 git clone https://github.com/AbirHasan2005/Save-Group
 cd Save-Group
@@ -18,7 +23,7 @@ git push heroku main:master
 ```
 
 ### Support Group
-<a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/DevsZone"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
 
 ### Follow on
 <p align="left">
