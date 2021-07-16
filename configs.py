@@ -12,4 +12,4 @@ class Config(object):
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     DEFAULT_BLOCKED_EXTENSIONS = "srt txt jpg jpeg png torrent html aio pdf"
-    BLOCKED_EXTENSIONS = list(set(int(x) for x in os.environ.get("BLOCKED_EXTENSIONS", DEFAULT_BLOCKED_EXTENSIONS).split()))
+    BLOCKED_EXTENSIONS = list(set(x for x in os.environ.get("BLOCKED_EXTENSIONS", DEFAULT_BLOCKED_EXTENSIONS).split()))
